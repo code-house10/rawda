@@ -899,7 +899,7 @@ body
 {
    clear: both;
 }
-@media (max-width: 350px)
+@media (max-width: 319px)
 {
 #LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2, #LayoutGrid3 > .row > .col-3
 {
@@ -4116,7 +4116,7 @@ body
    color: #FFFFFF;
    font-family: "Cairo";
    font-weight: 500;
-   font-size: 24px;
+   font-size: 16px;
 }
 #wb_Icon6
 {
@@ -4151,7 +4151,7 @@ body
    color: #FFFFFF;
    font-family: "Cairo";
    font-weight: 500;
-   font-size: 24px;
+   font-size: 16px;
 }
 #wb_Image1
 {
@@ -4883,7 +4883,7 @@ body
 }
 #wb_PanelMenu1
 {
-   width: 210px;
+   width: 290px;
    height: 75px;
    visibility: visible;
    display: inline-block;
@@ -4892,7 +4892,7 @@ body
 #PanelMenu1
 {
    line-height: 75px;
-   width: 175px;
+   width: 255px;
    height: 75px;
 }
 #PanelMenu1 .line:first-child
@@ -4945,41 +4945,41 @@ body
 }
 #wb_Carousel1
 {
-   width: 480px;
-   height: 372px;
+   width: 320px;
+   height: 296px;
    visibility: visible;
    display: block;
    margin: 0 0 5px 0 ;
 }
 #Carousel1 .frame
 {
-   width: 480px;
-   height: 372px;
+   width: 320px;
+   height: 296px;
 }
 #Carousel1 .carousel-item-inner
 {
-   width: 480px;
+   width: 320px;
    height: 0;
 }
 #Carousel1_back
 {
-   top: 45%;
+   top: 44%;
 }
 #Carousel1_next
 {
-   top: 45%;
+   top: 44%;
 }
 #Carousel1_back
 {
    left: 4px;
-   top: 45%;
+   top: 44%;
    width: 32px;
    height: 32px;
 }
 #Carousel1_next
 {
    right: 4px;
-   top: 45%;
+   top: 44%;
    width: 32px;
    height: 32px;
 }
@@ -5061,8 +5061,8 @@ body
 }
 #wb_Text6
 {
-   width: 145px;
-   height: 45px;
+   width: 103px;
+   height: 30px;
    visibility: visible;
    display: inline-block;
 }
@@ -5120,8 +5120,8 @@ body
 }
 #wb_Text8
 {
-   width: 152px;
-   height: 45px;
+   width: 103px;
+   height: 30px;
    visibility: visible;
    display: inline-block;
 }
@@ -5737,8 +5737,8 @@ body
 }
 #RollOverText1
 {
-   width: 341px;
-   height: 454px;
+   width: 288px;
+   height: 383px;
    visibility: visible;
    display: inline-block;
 }
@@ -5822,22 +5822,22 @@ body
 }
 #RollOverText2
 {
-   width: 341px;
-   height: 455px;
+   width: 288px;
+   height: 384px;
    visibility: visible;
    display: inline-block;
 }
 #RollOverText3
 {
-   width: 341px;
-   height: 455px;
+   width: 288px;
+   height: 384px;
    visibility: visible;
    display: inline-block;
 }
 #RollOverText4
 {
-   width: 341px;
-   height: 190px;
+   width: 288px;
+   height: 161px;
    visibility: visible;
    display: inline-block;
 }
@@ -5921,29 +5921,29 @@ body
 }
 #RollOverText5
 {
-   width: 341px;
-   height: 255px;
+   width: 288px;
+   height: 215px;
    visibility: visible;
    display: inline-block;
 }
 #RollOverText6
 {
-   width: 341px;
-   height: 453px;
+   width: 288px;
+   height: 383px;
    visibility: visible;
    display: inline-block;
 }
 #RollOverText7
 {
-   width: 341px;
-   height: 341px;
+   width: 288px;
+   height: 288px;
    visibility: visible;
    display: inline-block;
 }
 #RollOverText8
 {
-   width: 341px;
-   height: 455px;
+   width: 288px;
+   height: 385px;
    visibility: visible;
    display: inline-block;
 }
