@@ -899,7 +899,7 @@ body
 {
    clear: both;
 }
-@media (max-width: 320px)
+@media (max-width: 479px)
 {
 #LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2, #LayoutGrid3 > .row > .col-3
 {
@@ -4113,7 +4113,7 @@ body
 }
 #wb_uid13
 {
-   color: #FFFFFF;
+   color: #ED7D31;
    font-family: "Cairo";
    font-weight: 500;
    font-size: 24px;
@@ -5062,7 +5062,7 @@ body
 #wb_Text6
 {
    width: 145px;
-   height: 38px;
+   height: 45px;
    visibility: visible;
    display: inline-block;
 }
