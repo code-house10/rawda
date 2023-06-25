@@ -899,7 +899,7 @@ body
 {
    clear: both;
 }
-@media (max-width: 365px)
+@media (max-width: 350px)
 {
 #LayoutGrid3 > .row > .col-1, #LayoutGrid3 > .row > .col-2, #LayoutGrid3 > .row > .col-3
 {
@@ -4113,7 +4113,7 @@ body
 }
 #wb_uid13
 {
-   color: #FFFF00;
+   color: #FFFFFF;
    font-family: "Cairo";
    font-weight: 500;
    font-size: 24px;
