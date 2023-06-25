@@ -504,7 +504,7 @@ body
 {
    clear: both;
 }
-@media (max-width: 320px)
+@media (max-width: 479px)
 {
 #LayoutGrid2 > .row > .col-1, #LayoutGrid2 > .row > .col-2
 {
@@ -530,7 +530,7 @@ body
 #wb_PanelMenu1 a, #PanelMenu1_markup li a
 {
    display: block;
-   text-align: right;
+   text-align: center;
    vertical-align: middle;
 }
 #PanelMenu1_markup
@@ -1534,18 +1534,6 @@ body
 #CardContainer1 .swiper-slide
 {
    width: calc((100% - 66px) / 5);
-}
-#CardContainer1 .swiper-pagination-bullet
-{
-   width: 12px;
-   height: 12px;
-   margin: 16px 10px;
-   background: #FFFFFF;
-   opacity: 1;
-}
-#CardContainer1 .swiper-pagination-bullet-active
-{
-   background: #F20733;
 }
 #wb_Text14 
 {
