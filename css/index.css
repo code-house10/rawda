@@ -799,7 +799,7 @@ body
    background-repeat: no-repeat;
    background-position: center center;
    background-attachment: scroll;
-   background-size: 100% 100%;
+   background-size: cover;
 }
 #Carousel1 .frame-2
 {
@@ -4946,7 +4946,7 @@ body
 #wb_Carousel1
 {
    width: 320px;
-   height: 296px;
+   height: 335px;
    visibility: visible;
    display: block;
    margin: 0 0 5px 0 ;
@@ -4954,7 +4954,7 @@ body
 #Carousel1 .frame
 {
    width: 320px;
-   height: 296px;
+   height: 335px;
 }
 #Carousel1 .carousel-item-inner
 {
@@ -4963,23 +4963,23 @@ body
 }
 #Carousel1_back
 {
-   top: 44%;
+   top: 45%;
 }
 #Carousel1_next
 {
-   top: 44%;
+   top: 45%;
 }
 #Carousel1_back
 {
    left: 4px;
-   top: 44%;
+   top: 45%;
    width: 32px;
    height: 32px;
 }
 #Carousel1_next
 {
    right: 4px;
-   top: 44%;
+   top: 45%;
    width: 32px;
    height: 32px;
 }
