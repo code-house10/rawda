@@ -10,17 +10,19 @@
 <link href="css/swiper-bundle.min.css" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cairo:400,900,500,800,700&display=swap" rel="stylesheet">
-<link href="css/Untitled1.css?v=12" rel="stylesheet">
-<link href="css/index.css?v=12" rel="stylesheet">
+<link href="css/Untitled1.css?v=13" rel="stylesheet">
+<link href="css/index.css?v=13" rel="stylesheet">
 <script src="jquery-3.6.4.min.js"></script>
 <script src="wb.panel.min.js"></script>
-<script src="wb.carousel.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="swiper-bundle.min.js"></script>
 <script src="wb.parallax.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function(event)
 {
+   var Carousel1 = new bootstrap.Carousel('#Carousel1', {interval: 1700, pause: false});
    var cardContainer = document.querySelector('#CardContainer1');
    var cards = cardContainer.querySelectorAll('.card');
    for (var i = 0; i < cards.length; i++)
@@ -64,27 +66,6 @@ $(document).ready(function()
       $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top }, 600, 'linear');
    });
    $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: false, display: 'push', position: 'top', toggle: true});
-   var Carousel1Opts =
-   {
-      delay: 3000,
-      duration: 500,
-      easing: 'linear',
-      mode: 'forward',
-      direction: '',
-      scalemode: 3,
-      pagination: true,
-      pause: null,
-      start: 0
-   };
-   $("#Carousel1").carousel(Carousel1Opts);
-   $("#Carousel1_back a").click(function()
-   {
-      $('#Carousel1').carousel('prev');
-   });
-   $("#Carousel1_next a").click(function()
-   {
-      $('#Carousel1').carousel('next');
-   });
    $("#Accordion1").accordion(
    {
       event: 'click',
@@ -197,23 +178,35 @@ $(document).ready(function()
 </div>
 </div>
 <div id="wb_Carousel1">
-<div id="Carousel1">
-<div class="frame frame-1">
+<div id="Carousel1" class="carousel slide" data-bs-ride="carousel">
+<ol class="carousel-indicators">
+<li data-bs-target="#Carousel1" data-bs-slide-to="0" class="active"></li>
+<li data-bs-target="#Carousel1" data-bs-slide-to="1"></li>
+<li data-bs-target="#Carousel1" data-bs-slide-to="2"></li>
+</ol>
+<div class="carousel-inner">
+<div class="carousel-item frame-1 active">
 <div class="carousel-item-inner">
 </div>
 </div>
-<div class="frame frame-2">
+<div class="carousel-item frame-2">
 <div class="carousel-item-inner">
 </div>
 </div>
-<div class="frame frame-3">
+<div class="carousel-item frame-3">
 <div class="carousel-item-inner">
 </div>
 </div>
 </div>
-<div id="Carousel1_back"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
-<div id="Carousel1_next"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
+<a class="carousel-item-start carousel-control" href="#Carousel1" role="button" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+</a>
+<a class="carousel-item-end carousel-control" href="#Carousel1" role="button" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+</a>
 </div>
+</div>
+
 <div id="wb_LayoutGrid3">
 <div id="LayoutGrid3">
 <div class="row">
@@ -266,7 +259,7 @@ $(document).ready(function()
 </span>تعريف الشركة</h4>
 <div>
 <div id="wb_Text12">
-<span id="wb_uid15">البراق لنقل الاثاث أوائل شركات نقل الاثاث بالقاهرة والجيزة , لدينا خبرة متطورة بخدمات نقل الاثاث السكنى - التجارى - الفندقى بكل عناية ومهنية لعملائنا الكرام حيث يتم تنفيذ جميع اعمال نقل الاثاث باعلى درجة من الكفاءة بالأعتماد على فريق من الفنيين المختصين وعمالة الشركة المحترفة لتحقيق نسبة أمان 100%</span>
+<span id="wb_uid15">الروضة لنقل الاثاث أوائل شركات نقل الاثاث بالقاهرة والجيزة , لدينا خبرة متطورة بخدمات نقل الاثاث السكنى - التجارى - الفندقى بكل عناية ومهنية لعملائنا الكرام حيث يتم تنفيذ جميع اعمال نقل الاثاث باعلى درجة من الكفاءة بالأعتماد على فريق من الفنيين المختصين وعمالة الشركة المحترفة لتحقيق نسبة أمان 100%</span>
 </div>
 </div>
 <h4><span class="ui-accordion-header-icon ui-icon"><svg class="icon-default" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +271,7 @@ $(document).ready(function()
 </span>رؤية الشركة</h4>
 <div>
 <div id="wb_Text10">
-<span id="wb_uid16">تري شركة البراق أفضل شركة نقل اثاث بالقاهرة والجيزةان خدمات نقل الأثاث لها أهمية كبيرة عند كل مواطن مصري لانها توفر الكثير من الراحة والامان , وتجعله يشعر بالطمأنينة ؛ لانها توفر عليه الكثير من الجهد والعناء المبذول في عمليات النقل , وتقدم الشركة خدماتها للشركات والفنادق والشقق والمنازل , فلا تترد في الاستعانة بشركة البراق حتي تحصل علي افضل خدمة نقل عفش في القاهرة والجيزة بأسعار مميزة.</span>
+<span id="wb_uid16">تري شركة الروضة أفضل شركة نقل اثاث بالقاهرة والجيزةان خدمات نقل الأثاث لها أهمية كبيرة عند كل مواطن مصري لانها توفر الكثير من الراحة والامان , وتجعله يشعر بالطمأنينة ؛ لانها توفر عليه الكثير من الجهد والعناء المبذول في عمليات النقل , وتقدم الشركة خدماتها للشركات والفنادق والشقق والمنازل , فلا تترد في الاستعانة بشركة الروضة حتي تحصل علي افضل خدمة نقل عفش في القاهرة والجيزة بأسعار مميزة.</span>
 </div>
 </div>
 <h4><span class="ui-accordion-header-icon ui-icon"><svg class="icon-default" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -314,13 +307,13 @@ $(document).ready(function()
 <div class="col-1">
 <div class="col-1-padding">
 <div id="wb_Text14">
-<span id="wb_uid18"><strong>شركة البراق</strong></span>
+<span id="wb_uid18"><strong>شركة الروضة</strong></span>
 </div>
 <div id="wb_Text15">
 <span id="wb_uid19">أفضل عروض نقل وتغليف ورفع الأثاث</span>
 </div>
 <div id="wb_Text16">
-<span id="wb_uid20">أحصل الأن على خصم 30% لكل انواع الخدمات التى نقدمها مع البراق حياتك بقت اسهل.<br><br><br><br></span>
+<span id="wb_uid20">أحصل الأن على خصم 30% لكل انواع الخدمات التى نقدمها مع الروضة حياتك بقت اسهل.<br><br><br><br></span>
 </div>
 </div>
 </div>
@@ -382,7 +375,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Text18">
-<span id="wb_uid23">شركة البراق</span>
+<span id="wb_uid23">شركة الروضة</span>
 </div>
 <div id="wb_Text19">
 <span id="wb_uid24">أقل سعر وأفضل العروض لجميع خدمات نقل الأثاث والعفش</span>
