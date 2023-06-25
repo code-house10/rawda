@@ -956,10 +956,10 @@ body
 }
 #wb_Text6
 {
-   display: block;
+   display: inline-block;
    margin: 0;
-   box-sizing: border-box;
-   width: 100%;
+   width: 374px;
+   height: 45px;
 }
 #wb_Icon6
 {
@@ -1042,10 +1042,10 @@ body
 }
 #wb_Text8
 {
-   display: block;
+   display: inline-block;
    margin: 0;
-   box-sizing: border-box;
-   width: 100%;
+   width: 374px;
+   height: 45px;
 }
 #wb_LayoutGrid4
 {
@@ -5061,8 +5061,10 @@ body
 }
 #wb_Text6
 {
+   width: 145px;
+   height: 38px;
    visibility: visible;
-   display: block;
+   display: inline-block;
 }
 #wb_Text6
 {
@@ -5118,8 +5120,10 @@ body
 }
 #wb_Text8
 {
+   width: 152px;
+   height: 37px;
    visibility: visible;
-   display: block;
+   display: inline-block;
 }
 #wb_Text8
 {
